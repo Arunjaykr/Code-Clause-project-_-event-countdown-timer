@@ -1,0 +1,80 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.background-image {
+  background-image: url('i.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.coming {
+  color: red; 
+  font-family: monotype corsiva;
+  font-size: 180%;
+}
+
+.june {
+  color: red;
+  font-family: monotype corsiva;
+  font-size: 150%;
+}
+
+h1, h2 {
+  text-align: center;
+  color: white; 
+  font-family: monotype corsiva;
+}
+
+#countdown {
+  text-align: center;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  color:yellow 
+}
+#timer span {
+  font-family: monotype corsiva;
+}
+
+#timer div {
+  margin: 0 10px;
+}
+
+#timer span {
+  display: block;
+  font-size: 24px;
+}
+
+@keyframes rocketLaunch {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-300px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+.rocket {
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  transform: translateX(-50%);
+  animation: rocketLaunch 5s ease-out infinite; 
+}
+
